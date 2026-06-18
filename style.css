@@ -61,7 +61,7 @@ section{padding:64px 26px}
 .fv-form .ft{font-size:13px;font-weight:700;text-align:center;margin-bottom:3px}
 .fv-form .fsub{font-size:11px;color:var(--ink-2);text-align:center;margin-bottom:13px}
 .in-mail{display:flex;gap:8px}
-.in-mail input{flex:1;border:1.5px solid var(--line-2);border-radius:4px;padding:13px 13px;font-size:15px;font-family:inherit;background:#fff}
+.in-mail input{flex:1;min-width:0;border:1.5px solid var(--line-2);border-radius:4px;padding:13px 13px;font-size:15px;font-family:inherit;background:#fff}
 .in-mail input:focus{outline:none;border-color:var(--rose)}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;width:100%;border:none;cursor:pointer;font-family:inherit;font-weight:700;text-decoration:none;transition:background .2s,transform .1s}
 .btn:active{transform:translateY(1px)}
