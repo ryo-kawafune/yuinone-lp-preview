@@ -158,19 +158,20 @@ footer{background:var(--ink);color:rgba(244,238,230,.6);padding:42px 26px 32px;f
 .foot-co .row dd{color:rgba(244,238,230,.66)}
 .foot-cr{margin-top:24px;font-size:10.5px;color:rgba(244,238,230,.42);letter-spacing:.04em}
 
-/* ===== sticky CTA（刷新：行動誘導を強化） ===== */
+/* ===== sticky CTA（C'ベース：ダーク・フローティングカード／ローズ塗り） ===== */
 .sticky{position:fixed;left:0;right:0;bottom:0;z-index:40;max-width:480px;margin:0 auto;
-  padding:11px 14px calc(11px + env(safe-area-inset-bottom));
-  background:var(--white);border-top:1px solid var(--line);box-shadow:0 -8px 26px rgba(36,28,22,.16);
-  transform:translateY(130%);transition:transform .4s cubic-bezier(.2,.8,.2,1);display:flex;gap:12px;align-items:center}
+  padding:0 16px calc(16px + env(safe-area-inset-bottom));
+  transform:translateY(160%);transition:transform .42s cubic-bezier(.2,.8,.2,1)}
 .sticky.show{transform:translateY(0)}
-.sticky .s-info{flex:1;line-height:1.25;min-width:0}
-.sticky .s-amt{display:block;font-family:"Shippori Mincho",serif;font-weight:700;font-size:14.5px;color:var(--ink)}
-.sticky .s-amt b{color:var(--rose);font-family:"Cormorant Garamond",serif;font-style:italic;font-size:22px;margin:0 1px}
-.sticky .s-meta{display:flex;align-items:center;gap:6px;font-size:10.5px;color:var(--ink-2);margin-top:2px}
-.sticky .s-meta .pin{display:inline-block;background:var(--rose-l);color:var(--rose-d);font-weight:700;border-radius:2px;padding:0 5px;font-size:9.5px;letter-spacing:.02em}
-.sticky .s-btn{width:auto;flex:none;padding:14px 20px;white-space:nowrap;font-size:14.5px;box-shadow:0 6px 16px rgba(174,63,85,.36)}
-.sticky .s-btn .cta-arrow{margin-left:2px}
+.s-card{background:var(--ink);border:1px solid rgba(174,63,85,.5);border-radius:2px;
+  box-shadow:0 14px 30px rgba(20,14,10,.3);display:flex;align-items:center;gap:13px;padding:13px 14px}
+.s-rule{flex:none;width:2px;align-self:stretch;background:#E8C77E;opacity:.72}
+.s-of{flex:1;font-family:"Shippori Mincho",serif;font-weight:500;font-size:13px;letter-spacing:.04em;line-height:1.5;color:var(--paper);min-width:0}
+.s-of .s-n{font-family:"Shippori Mincho",serif;font-weight:700;color:#E8C77E;font-size:19px;margin:0 1px}
+.s-of small{display:block;font-family:"Zen Kaku Gothic New",sans-serif;font-weight:400;font-size:10.5px;letter-spacing:.08em;color:rgba(244,238,230,.6);margin-top:3px}
+.s-btn{flex:none;font-family:"Shippori Mincho",serif;font-weight:700;font-size:13.5px;letter-spacing:.12em;text-decoration:none;
+  padding:12px 20px;border-radius:2px;white-space:nowrap;background:var(--rose);color:#fff;border:1px solid var(--rose)}
+.s-btn:active{background:var(--rose-d)}
 
 /* ヘッダーロゴ（透過・白版） */
 .logo-h{width:150px;height:auto;display:block;filter:drop-shadow(0 1px 6px rgba(0,0,0,.45))}
