@@ -10,7 +10,7 @@
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{font-family:"Zen Kaku Gothic New","Noto Sans JP",sans-serif;color:var(--ink);background:var(--paper);line-height:1.85;font-size:15px;-webkit-font-smoothing:antialiased}
+body{font-family:"Zen Kaku Gothic New","Noto Sans JP",sans-serif;color:var(--ink);background:var(--paper);line-height:1.85;font-size:clamp(14px,3.9vw,16px);-webkit-font-smoothing:antialiased}
 img{display:block;max-width:100%}
 .wrap{max-width:480px;margin:0 auto;background:var(--paper);position:relative;overflow:hidden}
 /* faint paper grain to kill the flat AI sheen */
@@ -19,13 +19,13 @@ img{display:block;max-width:100%}
 .serif{font-family:"Shippori Mincho",serif}
 .lat{font-family:"Cormorant Garamond",serif;letter-spacing:.04em}
 
-section{padding:64px 26px}
+section{padding:clamp(46px,12vw,66px) clamp(20px,6.4vw,28px)}
 /* editorial section label: left, numbered, hairline — NOT a centered pill */
 .label{display:flex;align-items:center;gap:12px;margin-bottom:22px}
 .label .no{font-family:"Cormorant Garamond",serif;font-size:30px;font-style:italic;color:var(--rose);line-height:1}
 .label .tx{font-size:11px;letter-spacing:.26em;font-weight:700;color:var(--ink-2)}
 .label .ln{flex:1;height:1px;background:var(--line-2)}
-.h-lead{font-family:"Shippori Mincho",serif;font-weight:700;font-size:25px;line-height:1.6;letter-spacing:.01em;margin-bottom:14px}
+.h-lead{font-family:"Shippori Mincho",serif;font-weight:700;font-size:clamp(21px,6vw,27px);line-height:1.6;letter-spacing:.01em;margin-bottom:14px}
 .h-lead em{font-style:normal;color:var(--rose);border-bottom:2px solid var(--rose-l);padding-bottom:1px}
 .body-tx{font-size:14px;color:var(--ink-2);line-height:1.95}
 
@@ -48,7 +48,7 @@ section{padding:64px 26px}
 .fv-slidetxt{position:absolute;inset:0;opacity:0;transform:translateY(10px);transition:opacity .6s,transform .6s;display:flex;flex-direction:column;justify-content:flex-end}
 .fv-slidetxt.on{opacity:1;transform:none}
 .fv-slidetxt .sup{font-family:"Cormorant Garamond",serif;font-style:italic;font-size:16px;color:#F4DDB6;letter-spacing:.03em;margin-bottom:7px;display:block;text-shadow:0 1px 8px rgba(0,0,0,.55)}
-.fv-slidetxt h1{font-family:"Shippori Mincho",serif;font-weight:700;font-size:29px;line-height:1.48;text-shadow:0 2px 18px rgba(0,0,0,.6)}
+.fv-slidetxt h1{font-family:"Shippori Mincho",serif;font-weight:700;font-size:clamp(24px,7.1vw,32px);line-height:1.48;text-shadow:0 2px 18px rgba(0,0,0,.6)}
 .fv-slidetxt h1 .amt{display:block;font-size:15.5px;font-weight:500;margin-top:11px;letter-spacing:.02em;text-shadow:0 1px 9px rgba(0,0,0,.65)}
 .fv-slidetxt h1 .big{font-size:40px;color:#F4D9A6;font-family:"Cormorant Garamond",serif;font-style:italic;margin:0 3px}
 .fv-slidetxt h1 .hl{color:#F4D9A6}
@@ -80,8 +80,8 @@ section{padding:64px 26px}
 /* ===== Campaign band (main offer) ===== */
 .camp{background:var(--ink);color:#F4EEE6;text-align:left;padding-bottom:30px}
 .camp .tagline{font-family:"Cormorant Garamond",serif;font-style:italic;color:#F2D9B6;font-size:16px;margin-bottom:8px}
-.camp h2{font-family:"Shippori Mincho",serif;font-size:24px;line-height:1.55;font-weight:700;margin-bottom:6px}
-.camp .num{font-family:"Cormorant Garamond",serif;font-style:italic;font-size:74px;color:#F4D9A6;line-height:1;display:block;margin:14px 0 4px}
+.camp h2{font-family:"Shippori Mincho",serif;font-size:clamp(21px,6vw,26px);line-height:1.55;font-weight:700;margin-bottom:6px}
+.camp .num{font-family:"Cormorant Garamond",serif;font-style:italic;font-size:clamp(56px,18vw,80px);color:#F4D9A6;line-height:1;display:block;margin:14px 0 4px}
 .camp .num small{font-size:24px;font-style:normal;font-family:"Shippori Mincho",serif}
 .camp .note{font-size:12.5px;color:rgba(244,238,230,.7);border-top:1px solid rgba(244,238,230,.18);margin-top:20px;padding-top:16px}
 .camp .note b{color:#F2D9B6}
