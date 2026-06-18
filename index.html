@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YUINONE｜結婚式費用 最大100万円分プレゼント</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <header class="head">
+    <img class="logo-h" src="assets/logo-white.webp" alt="YUINONE">
+  </header>
+
+  <!-- ===== FV: carousel(背景切替/スワイプ) + メールのみフォーム + Google/LINE ===== -->
+  <section class="fv">
+    <div class="slides" id="slides">
+      <div class="slide on" style="background-image:url('assets/hero.webp');background-position:center 22%"></div>
+      <div class="slide" style="background-image:url('assets/bg2.webp')"></div>
+      <div class="slide" style="background-image:url('assets/bg3.webp')"></div>
+      <div class="slide" style="background-image:url('assets/bg4.webp')"></div>
+    </div>
+    <div class="veil"></div>
+
+    <div class="fv-top">
+      <span class="kicker"><span class="dot"></span>期間限定キャンペーン</span>
+      <div class="fv-rotor" id="rotor">
+        <div class="fv-slidetxt on">
+          <span class="sup">Limited Campaign</span>
+          <h1>挙式費用、最大<br>100万円分プレゼント
+            <span class="amt">応募は無料の会員登録だけ・最短1分</span></h1>
+        </div>
+        <div class="fv-slidetxt">
+          <span class="sup">Your wedding</span>
+          <h1>結婚式の費用を、<br>諦めないで。
+            <span class="amt">企業がおふたりの挙式を支えます</span></h1>
+        </div>
+        <div class="fv-slidetxt">
+          <span class="sup">No compromise</span>
+          <h1>ドレスも、会場も、<br><span class="hl">我慢しない</span>。
+            <span class="amt">理想のままの一日へ</span></h1>
+        </div>
+        <div class="fv-slidetxt">
+          <span class="sup">Just one minute</span>
+          <h1>応募は、<br>会員登録だけ。
+            <span class="amt">メールアドレスがあれば今すぐ</span></h1>
+        </div>
+      </div>
+      <div class="fv-dots" id="dots"></div>
+    </div>
+
+    <div class="fv-form" id="reg-fv">
+      <div class="ft">メールアドレスだけで、応募完了</div>
+      <div class="fsub">お名前・パスワードは次の認証ステップで設定します</div>
+      <form class="in-mail" onsubmit="return false">
+        <input type="email" placeholder="メールアドレス" autocomplete="email">
+        <button class="btn btn-primary" type="submit">応募する</button>
+      </form>
+      <div class="or">または</div>
+      <div class="social">
+        <a href="#"><svg viewBox="0 0 48 48"><path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3c-1.6 4.7-6.1 8-11.3 8-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.9 1.2 8 3.1l5.7-5.7C34.5 6.1 29.5 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.6-.4-3.5z"/><path fill="#FF3D00" d="M6.3 14.7l6.6 4.8C14.7 16 19 13 24 13c3.1 0 5.9 1.2 8 3.1l5.7-5.7C34.5 6.1 29.5 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/><path fill="#4CAF50" d="M24 44c5.4 0 10.3-2.1 14-5.4l-6.5-5.5C29.6 34.6 26.9 36 24 36c-5.2 0-9.6-3.3-11.3-7.9l-6.5 5C9.6 39.6 16.2 44 24 44z"/><path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.2-2.2 4.2-4.1 5.6l6.5 5.5C40.9 35.6 44 30.3 44 24c0-1.3-.1-2.6-.4-3.5z"/></svg>Googleで登録</a>
+        <a href="#" class="line"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 3C6.5 3 2 6.6 2 11c0 4 3.6 7.3 8.5 7.9.3.1.8.2.9.5.1.3.1.7 0 1l-.1.9c0 .3-.2 1 .9.6 1.1-.5 6-3.5 8.2-6C21.4 14.4 22 12.8 22 11c0-4.4-4.5-8-10-8z"/></svg>LINEで登録</a>
+      </div>
+      <p class="micro"><a href="#">利用規約</a>・<a href="#">プライバシーポリシー</a>に同意のうえご登録ください</p>
+    </div>
+  </section>
+
+  <!-- ===== Campaign 訴求 ===== -->
+  <section class="camp">
+    <div class="tagline">Present Campaign</div>
+    <h2>抽選で1組様に、<br>挙式費用をプレゼント。</h2>
+    <span class="num">100<small>万円分</small></span>
+    <p class="body-tx" style="color:rgba(244,238,230,.82)">応募方法は、無料の会員登録だけ。メールアドレスがあれば最短1分で完了します。当選されたおふたりには、挙式費用として最大100万円分をサポートします。</p>
+  </section>
+
+  <!-- ===== Campaign 応募要項（景表法対応で詳細記載） ===== -->
+  <section class="cterms">
+    <details>
+      <summary>キャンペーン応募要項<span class="arw"></span></summary>
+      <div class="box">
+      <dl>
+        <dt>賞品</dt><dd>挙式費用 最大100万円分（抽選で1組様）</dd>
+        <dt>応募期間</dt><dd>2026年7月31日までにYUINONEへ会員登録された方</dd>
+        <dt>抽選・発表</dt><dd>2026年8月中に抽選を行い、当選者へのご連絡をもって発表に代えさせていただきます</dd>
+        <dt>応募条件</dt><dd>
+          <ul>
+            <li>2026年11月以降に挙式予定の方</li>
+            <li>YUINONE提携式場で挙式される方</li>
+            <li>50名以上（新郎新婦含む）の披露宴を実施される方</li>
+            <li>YUINONEのプロモーションにご協力いただける方</li>
+          </ul>
+        </dd>
+        <dt>提供</dt><dd>YUINONE</dd>
+      </dl>
+      <p class="fine">※当選者が応募条件に該当しない場合は、再抽選とさせていただきます。※費用負担の有無および金額は、スポンサー企業とのマッチング状況により決定するため、ご希望に添えない場合があります。※記載の内容は予告なく変更となる場合があります。</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ===== 01 仕組み（About + 三方よし図） ===== -->
+  <section class="about">
+    <div class="label"><span class="no">01</span><span class="tx">ABOUT</span><span class="ln"></span></div>
+    <p class="h-lead">カップル・式場・企業が<br>支え合う、<em>三方よし</em>。</p>
+    <div class="fb-lead">
+      <div class="ph"><img src="assets/img-about.webp" alt="サポートを受けるカップル"></div>
+      <div class="ovc"><p>YUINONE（結いの根）には、「結び・縁（ゆい）」と「音（ね）」の意味を込めています。人と人をつなぎ、未来を奏でていく——結婚式を挙げたいおふたりと、式場、そして応援したい企業を結ぶマッチングサービスです。</p></div>
+    </div>
+    <div class="cycle">
+      <svg viewBox="0 20 360 242" font-family="Zen Kaku Gothic New, sans-serif">
+        <defs><marker id="ah" markerWidth="10" markerHeight="10" refX="6.5" refY="3" orient="auto"><path d="M0,0 L6.5,3 L0,6" fill="none" stroke="#AE3F55" stroke-width="1.3"/></marker></defs>
+        <!-- 価値の循環（矢印は各ノードへ正対） -->
+        <path d="M269,187 Q302,118 200,86" fill="none" stroke="#AE3F55" stroke-width="1.3" marker-end="url(#ah)"/>
+        <path d="M160,86 Q58,118 91,187" fill="none" stroke="#AE3F55" stroke-width="1.3" marker-end="url(#ah)"/>
+        <path d="M104,223 Q180,264 256,223" fill="none" stroke="#AE3F55" stroke-width="1.3" marker-end="url(#ah)"/>
+        <!-- 矢印ラベル（チップ） -->
+        <g><rect x="238" y="119" width="62" height="18" rx="2" fill="#F4EEE6"/><text x="269" y="132" font-size="10" fill="#241F1B" text-anchor="middle">費用サポート</text></g>
+        <g><rect x="62" y="119" width="58" height="18" rx="2" fill="#F4EEE6"/><text x="91" y="132" font-size="10" fill="#241F1B" text-anchor="middle">成約・売上</text></g>
+        <g><rect x="151" y="236" width="58" height="18" rx="2" fill="#F4EEE6"/><text x="180" y="249" font-size="10" fill="#241F1B" text-anchor="middle">PR・集客</text></g>
+        <!-- ノード -->
+        <circle cx="180" cy="58" r="33" fill="#FCFAF6" stroke="#241F1B" stroke-width="1.2"/>
+        <text x="180" y="55" font-size="13.5" fill="#241F1B" text-anchor="middle" font-family="Shippori Mincho, serif">おふたり</text>
+        <text x="180" y="69" font-size="8.5" fill="#717E62" text-anchor="middle">挙式したい</text>
+        <circle cx="72" cy="214" r="33" fill="#FCFAF6" stroke="#241F1B" stroke-width="1.2"/>
+        <text x="72" y="211" font-size="13.5" fill="#241F1B" text-anchor="middle" font-family="Shippori Mincho, serif">式場</text>
+        <text x="72" y="225" font-size="8.5" fill="#717E62" text-anchor="middle">迎えたい</text>
+        <circle cx="288" cy="214" r="33" fill="#FCFAF6" stroke="#241F1B" stroke-width="1.2"/>
+        <text x="288" y="211" font-size="13.5" fill="#241F1B" text-anchor="middle" font-family="Shippori Mincho, serif">企業</text>
+        <text x="288" y="225" font-size="8.5" fill="#717E62" text-anchor="middle">応援したい</text>
+        <circle cx="180" cy="150" r="30" fill="#AE3F55"/>
+        <text x="180" y="148" font-size="12" fill="#FCFAF6" text-anchor="middle" font-family="Cormorant Garamond, serif" font-style="italic" letter-spacing="1">YUINONE</text>
+        <text x="180" y="161" font-size="8.5" fill="#F0DEDD" text-anchor="middle">つなぐ</text>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ===== 02 共感 ===== -->
+  <section class="prob">
+    <div class="label"><span class="no">02</span><span class="tx">ABOUT COST</span><span class="ln"></span></div>
+    <p class="q">「やりたい結婚式」と「予算」のあいだで、<br>諦めかけていませんか。</p>
+    <ul>
+      <li>ドレスや演出を、費用のために妥協してしまう</li>
+      <li>会場の見積もりが、想像より高かった</li>
+      <li>ふたりだけで抱え込み、相談先が分からない</li>
+    </ul>
+    <p class="turn">YUINONEは、<em>企業のサポート</em>という新しい選択肢で、その我慢をほどきます。</p>
+  </section>
+
+  <!-- ===== 03 選ばれる理由（スポンサー価値・安心。重複排除） ===== -->
+  <section class="feat">
+    <div class="label"><span class="no">03</span><span class="tx">WHY YUINONE</span><span class="ln"></span></div>
+    <p class="h-lead">YUINONEが、<em>選ばれる理由</em>。</p>
+    <div class="sec-img"><img src="assets/img-support.webp" alt="サポートを受けるおふたり"></div>
+    <div class="f-row">
+      <div class="fno">i</div>
+      <div class="fbody">
+        <h3>企業スポンサーが費用を負担<span class="tag">最大150万円 実績</span></h3>
+        <p>条件に合う企業が、結婚式費用の一部を負担。<span class="amt">最大150万円</span>のサポート実績があります。負担額はスポンサー企業とのマッチングを経て決まります。</p>
+      </div>
+    </div>
+    <div class="f-row">
+      <div class="fno">ii</div>
+      <div class="fbody">
+        <h3>審査済み企業だけの、自然なサポート</h3>
+        <p>参加企業はすべて審査済み。強制的な宣伝や、式の雰囲気を損なうような広告は行いません。安心して当日を迎えられます。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 04 ご利用の流れ（実LP準拠・6ステップ） ===== -->
+  <section class="how">
+    <div class="label"><span class="no">04</span><span class="tx">HOW IT WORKS</span><span class="ln"></span></div>
+    <p class="h-lead">登録から挙式までの、<em>ご利用の流れ</em>。</p>
+    <div class="sec-img"><img src="assets/img-flow.webp" alt="スマホで登録するおふたり"></div>
+    <div class="step"><span class="sn">1</span><div><h3>YUINONE会員登録</h3><p>メールアドレスだけで、無料で。最短1分、まずはここから。</p></div></div>
+    <div class="step"><span class="sn">2</span><div><h3>費用負担の面談</h3><p>サポートをご希望の方は、担当スタッフがおふたりの想いをうかがいます。</p></div></div>
+    <div class="step"><span class="sn">3</span><div><h3>負担費用額の決定</h3><p>ご希望に合う企業をマッチング。負担いただける金額が決まります。</p></div></div>
+    <div class="step"><span class="sn">4</span><div><h3>サービス申し込み</h3><p>内容にご納得いただけたら、正式にお申し込み。</p></div></div>
+    <div class="step"><span class="sn">5</span><div><h3>費用のお支払い</h3><p>負担分はYUINONEから式場へ直接。おふたりの手間はかかりません。</p></div></div>
+    <div class="step"><span class="sn">6</span><div><h3>挙式</h3><p>あとは、思いきり楽しむだけ。おふたりの、大切な一日を。</p></div></div>
+  </section>
+
+  <!-- ===== 05 会員限定の機能 ===== -->
+  <section class="member">
+    <div class="label"><span class="no">05</span><span class="tx">MEMBER</span><span class="ln"></span></div>
+    <p class="h-lead">会員登録すると、<em>できること</em>。</p>
+    <div class="sec-img"><img src="assets/img-detail.webp" alt="ウェディングの準備"></div>
+    <div class="m-grid">
+      <div class="m-item">
+        <span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg></span>
+        <div><h3>式場お気に入り機能</h3><p>心ひかれた式場を、そっと保存。あとでゆっくり見比べられます。</p></div>
+      </div>
+      <div class="m-item">
+        <span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>
+        <div><h3>式場へのメッセージ機能</h3><p>気になる式場へ、直接メッセージ。費用も日程も、そのまま聞けます。</p></div>
+      </div>
+      <div class="m-item">
+        <span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg></span>
+        <div><h3>スカウト機能</h3><p>式場からお声がけが届くことも。思いがけない出会いが、広がります。</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 06 声 ===== -->
+  <section class="voice">
+    <div class="label"><span class="no">06</span><span class="tx">VOICE</span><span class="ln"></span></div>
+    <div class="sec-img"><img src="assets/img-voice.webp" alt="利用したおふたり"></div>
+    <div class="vhs">
+    <div class="v-card"><div class="stars">★★★★★</div><p>「費用を理由に諦めかけていた挙式が、サポートで実現しました。式場とも直接やりとりでき、安心して進められました。」</p><div class="who"><b>K.T 様</b>　東京都／ガーデンウェディング</div></div>
+    <div class="v-card"><div class="stars">★★★★★</div><p>「登録はメールだけで本当に簡単。気になる式場とそのまま相談でき、比較がスムーズでした。」</p><div class="who"><b>M.S 様</b>　神奈川県／ホテル挙式</div></div>
+    <div class="v-card"><div class="stars">★★★★★</div><p>「ドレスも演出も我慢せずに済んだのが一番うれしい。企業が支えてくれる新しい形だと感じました。」</p><div class="who"><b>A.W 様</b>　大阪府／レストランウェディング</div></div>
+    </div>
+    <p class="vhint">← スワイプして読む →</p>
+  </section>
+
+  <!-- ===== 情緒バンド：縦書き見出し＋写真はみ出し（採用レイアウト5） ===== -->
+  <section class="vband">
+    <div class="vh">諦めない、<br>その一日を。</div>
+    <div class="ph"><img src="assets/img-couple.webp" alt=""></div>
+    <p class="vcap">Your dream wedding</p>
+  </section>
+
+  <!-- ===== 途中の登録動線 ===== -->
+  <section class="reg" id="reg-mid">
+    <p class="rlead">いまの気持ちのまま、<br>応募しておきませんか。</p>
+    <p class="rsub">メールアドレスだけ・最短1分。応募は2026年7月31日まで。</p>
+    <div class="reg-card">
+      <form class="in-mail" onsubmit="return false">
+        <input type="email" placeholder="メールアドレス" autocomplete="email">
+        <button class="btn btn-primary" type="submit">応募する</button>
+      </form>
+      <div class="or">または</div>
+      <div class="social">
+        <a href="#"><svg viewBox="0 0 48 48"><path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3c-1.6 4.7-6.1 8-11.3 8-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.9 1.2 8 3.1l5.7-5.7C34.5 6.1 29.5 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.6-.4-3.5z"/><path fill="#FF3D00" d="M6.3 14.7l6.6 4.8C14.7 16 19 13 24 13c3.1 0 5.9 1.2 8 3.1l5.7-5.7C34.5 6.1 29.5 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/><path fill="#4CAF50" d="M24 44c5.4 0 10.3-2.1 14-5.4l-6.5-5.5C29.6 34.6 26.9 36 24 36c-5.2 0-9.6-3.3-11.3-7.9l-6.5 5C9.6 39.6 16.2 44 24 44z"/><path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.2-2.2 4.2-4.1 5.6l6.5 5.5C40.9 35.6 44 30.3 44 24c0-1.3-.1-2.6-.4-3.5z"/></svg>Googleで登録</a>
+        <a href="#" class="line"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 3C6.5 3 2 6.6 2 11c0 4 3.6 7.3 8.5 7.9.3.1.8.2.9.5.1.3.1.7 0 1l-.1.9c0 .3-.2 1 .9.6 1.1-.5 6-3.5 8.2-6C21.4 14.4 22 12.8 22 11c0-4.4-4.5-8-10-8z"/></svg>LINEで登録</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 07 FAQ（実LP準拠） ===== -->
+  <section class="faq">
+    <div class="label"><span class="no">07</span><span class="tx">FAQ</span><span class="ln"></span></div>
+    <details open><summary>YUINONEの利用は本当に無料ですか？</summary><p>会員登録もご利用も、無料です。費用負担サポートを受けるときだけ、別途お手続きがあります。</p></details>
+    <details><summary>費用負担は必ず受けられますか？</summary><p>スポンサー企業とのマッチング次第で、ご希望に添えないこともあります。その際も、スタッフがご相談に乗ります。</p></details>
+    <details><summary>費用負担額はどのくらいですか？</summary><p>これまで最大150万円のサポート実績があります。具体的な金額は、面談のうえで決まります。</p></details>
+    <details><summary>スポンサー企業の紹介はどのように行われますか？</summary><p>あくまで自然な形で。強制的な宣伝や、式の雰囲気を損なうような広告は行いません。</p></details>
+    <details><summary>全国の式場に対応していますか？</summary><p>提携式場を少しずつ広げています。エリアや条件で探して、直接ご相談いただけます。</p></details>
+    <details><summary>チャット機能で式場へ直接連絡できますか？</summary><p>はい。気になる式場へ、そのままメッセージを送れます。</p></details>
+  </section>
+
+  <!-- ===== 08 運営 ===== -->
+  <section class="co">
+    <div class="label"><span class="no">08</span><span class="tx">ABOUT US</span><span class="ln"></span></div>
+    <dl>
+      <dt>サービス</dt><dd>企業スポンサー型 ブライダル支援 YUINONE</dd>
+      <dt>運営会社</dt><dd>株式会社R-field</dd>
+      <dt>サポート実績</dt><dd>最大150万円の費用負担実績</dd>
+      <dt>利用料金</dt><dd>会員登録は無料（費用負担サポートは別途手続き）</dd>
+    </dl>
+  </section>
+
+  <!-- ===== 最終登録動線 ===== -->
+  <section class="reg dark" id="reg-final">
+    <p class="rlead">おふたりらしい結婚式を、<br>我慢せずに。</p>
+    <p class="rsub">メールアドレスだけ・最短1分で応募完了。</p>
+    <div class="reg-card">
+      <form class="in-mail" onsubmit="return false">
+        <input type="email" placeholder="メールアドレス" autocomplete="email">
+        <button class="btn btn-primary" type="submit">応募する</button>
+      </form>
+      <div class="or">または</div>
+      <div class="social">
+        <a href="#"><svg viewBox="0 0 48 48"><path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3c-1.6 4.7-6.1 8-11.3 8-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.9 1.2 8 3.1l5.7-5.7C34.5 6.1 29.5 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.6-.4-3.5z"/><path fill="#FF3D00" d="M6.3 14.7l6.6 4.8C14.7 16 19 13 24 13c3.1 0 5.9 1.2 8 3.1l5.7-5.7C34.5 6.1 29.5 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/><path fill="#4CAF50" d="M24 44c5.4 0 10.3-2.1 14-5.4l-6.5-5.5C29.6 34.6 26.9 36 24 36c-5.2 0-9.6-3.3-11.3-7.9l-6.5 5C9.6 39.6 16.2 44 24 44z"/><path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.2-2.2 4.2-4.1 5.6l6.5 5.5C40.9 35.6 44 30.3 44 24c0-1.3-.1-2.6-.4-3.5z"/></svg>Googleで登録</a>
+        <a href="#" class="line"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 3C6.5 3 2 6.6 2 11c0 4 3.6 7.3 8.5 7.9.3.1.8.2.9.5.1.3.1.7 0 1l-.1.9c0 .3-.2 1 .9.6 1.1-.5 6-3.5 8.2-6C21.4 14.4 22 12.8 22 11c0-4.4-4.5-8-10-8z"/></svg>LINEで登録</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <img class="foot-logo-img" src="assets/logo-white.webp" alt="YUINONE">
+    <p class="foot-tag">企業スポンサー型 ブライダル支援サービス</p>
+    <nav class="foot-links">
+      <a href="https://yuinone.net/terms-of-use">利用規約</a>
+      <a href="https://yuinone.net/terms-of-use">プライバシーポリシー</a>
+      <a href="https://yuinone.net/faq-accordion">よくあるご質問</a>
+      <a href="https://yuinone.net/contact-form-ui">お問い合わせ</a>
+      <a href="https://www.rfield.net/company">運営会社情報</a>
+    </nav>
+    <div class="foot-co">
+      <div class="row"><dt>運営会社</dt><dd>株式会社R-field</dd></div>
+      <div class="row"><dt>所在地</dt><dd>東京都千代田区岩本町3-8-8 中和秋葉原ビル5F-20</dd></div>
+      <div class="row"><dt>代表者</dt><dd>山田和徳</dd></div>
+      <div class="row"><dt>設立</dt><dd>2021年3月</dd></div>
+      <div class="row"><dt>TEL</dt><dd>03-6823-8025</dd></div>
+    </div>
+    <p class="foot-cr">© 2026 YUINONE / R-field Inc. All rights reserved.</p>
+  </footer>
+</div>
+
+<div class="sticky" id="sticky">
+  <div class="s-info">
+    <span class="s-amt">最大<b>100</b>万円分プレゼント</span>
+    <span class="s-meta"><span class="pin">無料</span>会員登録だけ・抽選1組・7/31まで</span>
+  </div>
+  <a href="#reg-final" class="btn btn-primary s-btn">応募する<span class="cta-arrow">›</span></a>
+</div>
+
+<script>
+const slides=[...document.querySelectorAll('.slide')];
+const texts=[...document.querySelectorAll('.fv-slidetxt')];
+const dotsEl=document.getElementById('dots');
+let idx=0;const N=texts.length;
+texts.forEach((_,i)=>{const d=document.createElement('i');if(i===0)d.className='on';d.onclick=()=>go(i,true);dotsEl.appendChild(d);});
+function go(i,manual){
+  idx=(i+N)%N;
+  slides.forEach((s,j)=>s.classList.toggle('on',j===idx));
+  texts.forEach((s,j)=>s.classList.toggle('on',j===idx));
+  [...dotsEl.children].forEach((d,j)=>d.classList.toggle('on',j===idx));
+  if(manual){clearInterval(timer);timer=setInterval(()=>go(idx+1),5000);}
+}
+let timer=setInterval(()=>go(idx+1),5000);
+/* スワイプ操作（タッチ） */
+const fv=document.querySelector('.fv');let sx=null,sy=null;
+fv.addEventListener('touchstart',e=>{sx=e.touches[0].clientX;sy=e.touches[0].clientY;},{passive:true});
+fv.addEventListener('touchend',e=>{
+  if(sx===null)return;
+  const dx=e.changedTouches[0].clientX-sx, dy=e.changedTouches[0].clientY-sy;
+  if(Math.abs(dx)>40 && Math.abs(dx)>Math.abs(dy)) go(idx+(dx<0?1:-1),true);
+  sx=sy=null;
+},{passive:true});
+/* マウスドラッグ（PC確認用） */
+let mdx=null;
+fv.addEventListener('mousedown',e=>{mdx=e.clientX;});
+window.addEventListener('mouseup',e=>{if(mdx===null)return;const dx=e.clientX-mdx;if(Math.abs(dx)>50)go(idx+(dx<0?1:-1),true);mdx=null;});
+const sticky=document.getElementById('sticky');
+let fvOut=false, finalIn=false;
+const updSticky=()=>sticky.classList.toggle('show', fvOut && !finalIn);
+new IntersectionObserver(([e])=>{fvOut=!e.isIntersecting;updSticky();},{threshold:.08}).observe(fv);
+new IntersectionObserver(([e])=>{finalIn=e.isIntersecting;updSticky();},{threshold:.04}).observe(document.getElementById('reg-final'));
+</script>
+</body>
+</html>
